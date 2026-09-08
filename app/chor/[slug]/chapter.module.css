@@ -18,6 +18,16 @@
   overflow: hidden;
 }
 
+/* Effects off: no scene to show, so no empty banner (and no negative-margin
+   overlap for the article to compensate for). */
+:global(html:not([data-fx="on"])) .banner {
+  display: none;
+}
+
+:global(html:not([data-fx="on"])) .article {
+  margin-top: 2rem;
+}
+
 .article {
   max-width: 46rem;
   margin: -3rem auto 5rem;

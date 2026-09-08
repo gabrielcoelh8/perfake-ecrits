@@ -1,0 +1,29 @@
+.off,
+.on {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  line-height: 0;
+  align-self: center;
+}
+
+.off {
+  color: #555;
+}
+
+.off:hover {
+  color: #999;
+}
+
+.on {
+  color: #cfcabd;
+}
+
+.on:hover {
+  color: #f2efe8;
+}

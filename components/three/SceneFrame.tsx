@@ -9,6 +9,9 @@ import type { SceneMode } from "./scenes";
 /**
  * The ONLY place a <Canvas> is created.
  *
+ * Never imported directly — reach it through <SceneSlot>, which lazy-loads this
+ * module only once the reader has switched the visual effects on.
+ *
  * Why one canvas per region (not a shared drei <View>): the home cards flip with
  * a CSS 3D transform. A shared fixed canvas cannot rotate with the card, so each
  * card owns its own small <canvas> inside the transformed DOM.

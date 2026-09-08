@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import type { Metadata } from "next";
 import { CHAPTERS, getChapter, getAdjacent } from "@/lib/chapters";
 import { getChapterHtml } from "@/lib/markdown";
-import SceneFrame from "@/components/three/SceneFrame";
-import LiquidTitle from "@/components/LiquidTitle";
+import SceneSlot from "@/components/three/SceneSlot";
+import ChapterArticle from "@/components/ChapterArticle";
 import styles from "./chapter.module.css";
 
 // Pre-render one static page per chapter (prefácio has its own route).
@@ -40,55 +39,25 @@ export default async function ChapterPage({
 
   return (
     <div className={styles.page}>
+      {/* Scenes render only when the reader turned the visual effects on. */}
       {/* Fixed background scene (skipped for Borboletas). */}
       {chapter.hasBackground && (
         <div className={styles.bg} aria-hidden="true">
-          <SceneFrame sceneId={chapter.sceneId} mode="background" />
+          <SceneSlot sceneId={chapter.sceneId} mode="background" />
         </div>
       )}
 
       {/* Top banner rectangle. */}
       <div className={styles.banner} aria-hidden="true">
-        <SceneFrame sceneId={chapter.sceneId} mode="banner" />
+        <SceneSlot sceneId={chapter.sceneId} mode="banner" />
       </div>
 
-      <article
-        className={`${styles.article} ${chapter.hasBackground ? styles.glass : styles.plain}`}
-        style={{ ["--dropcap" as string]: chapter.accent }}
-      >
-        <p className={styles.kicker}>
-          <span className={styles.kanji}>{chapter.kanji}</span> capítulo{" "}
-          {chapter.num}
-        </p>
-
-        {chapter.slug === "agua" ? (
-          <LiquidTitle>{chapter.title}</LiquidTitle>
-        ) : (
-          <h1 className={styles.title}>{chapter.title}</h1>
-        )}
-
-        <div
-          className="prose"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-
-        <nav className={styles.pager}>
-          {prev ? (
-            <Link href={`/chor/${prev.slug}`} className={styles.pagerLink}>
-              ← {prev.title}
-            </Link>
-          ) : (
-            <span />
-          )}
-          {next ? (
-            <Link href={`/chor/${next.slug}`} className={styles.pagerLink}>
-              {next.title} →
-            </Link>
-          ) : (
-            <span />
-          )}
-        </nav>
-      </article>
+      <ChapterArticle
+        chapter={chapter}
+        html={html}
+        prev={prev}
+        next={next}
+      />
     </div>
   );
 }

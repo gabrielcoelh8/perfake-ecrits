@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { UnifrakturMaguntia, Noto_Serif_JP } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import EffectsProvider from "@/components/EffectsProvider";
 import { SITE_TITLE } from "@/lib/constants";
 
 // Blackletter drop-cap font (classic-book initial letter).
@@ -12,8 +13,9 @@ const fraktur = UnifrakturMaguntia({
   display: "swap",
 });
 
-// Kanji numerals for card backs (一〜八). preload:false so the CJK face is only
-// fetched when a card back is shown, not blocking initial paint.
+// Kanji numerals on the home cards and chapter kickers (一〜十). preload:false
+// keeps the heavy CJK face off the critical path; display:swap paints Times
+// first and swaps the glyphs in.
 const notoSerifJp = Noto_Serif_JP({
   weight: "600",
   variable: "--font-kanji",
@@ -23,7 +25,7 @@ const notoSerifJp = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
-  description: "Contos de Gabriel Coelho — uma sinfonia em oito movimentos.",
+  description: "Contos de Gabriel Coelho — uma sinfonia em dez movimentos.",
 };
 
 export default function RootLayout({
@@ -37,8 +39,10 @@ export default function RootLayout({
       className={`${fraktur.variable} ${notoSerifJp.variable}`}
     >
       <body>
-        <NavBar />
-        <main className="site-main">{children}</main>
+        <EffectsProvider>
+          <NavBar />
+          <main className="site-main">{children}</main>
+        </EffectsProvider>
       </body>
     </html>
   );

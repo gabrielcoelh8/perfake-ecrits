@@ -71,8 +71,10 @@ a {
   border: 1px solid var(--border);
 }
 
-/* Classic-book drop cap on the first paragraph, blackletter font. */
-.prose > p:first-of-type::first-letter {
+/* Classic-book drop cap on the first paragraph, blackletter font.
+   Decorative, so only with the visual effects on — the default reading view is
+   plain Times New Roman with no ornament. */
+html[data-fx="on"] .prose > p:first-of-type::first-letter {
   font-family: var(--font-fraktur), var(--serif);
   float: left;
   font-size: 4.4em;

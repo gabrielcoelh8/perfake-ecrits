@@ -1,6 +1,7 @@
 "use client";
 
 import { useId } from "react";
+import { useEffectsEnabled } from "./EffectsProvider";
 import styles from "./LiquidTitle.module.css";
 
 /**
@@ -10,10 +11,17 @@ import styles from "./LiquidTitle.module.css";
  * is applied to the <h1> through CSS `filter: url(#id)`. Pure SVG, no shader; it
  * degrades to plain text where SVG filters aren't supported and is disabled under
  * prefers-reduced-motion (the <animate> stops via CSS media query on the wrapper).
+ *
+ * With the visual effects off the filter is skipped entirely — just a heading.
  */
 export default function LiquidTitle({ children }: { children: string }) {
+  const { effects } = useEffectsEnabled();
   const rawId = useId();
   const id = `liquid-${rawId.replace(/:/g, "")}`;
+
+  if (!effects) {
+    return <h1 className={styles.title}>{children}</h1>;
+  }
 
   return (
     <div className={styles.wrap}>

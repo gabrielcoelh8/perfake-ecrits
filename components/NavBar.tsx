@@ -1,16 +1,19 @@
 "use client";
 
+import { BOOKS } from "@/lib/books";
+import { APOIE_ENABLED, APOIE_URL, SITE_TITLE } from "@/lib/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { CHAPTERS } from "@/lib/chapters";
-import { APOIE_URL, SITE_TITLE } from "@/lib/constants";
+import EffectsToggle from "./EffectsToggle";
 import styles from "./NavBar.module.css";
 
 /**
  * Are.na-style header: plain text, no boxes, no animation.
- * "Chor Sinfonie / Início · Books · Apoie" — active item white, others muted.
- * Books opens a simple bordered dropdown listing Prefácio + the 8 chapters.
+ * "Chor Sinfonie / Início · Livros · Apoie" — active item white, others muted.
+ * "Livros" opens a bordered dropdown listing each book from lib/books.ts with
+ * its cover and chapters, so a second book needs no change here.
+ * The icon on the far right toggles the optional visual effects.
  */
 export default function NavBar() {
   const pathname = usePathname();
@@ -37,12 +40,15 @@ export default function NavBar() {
   }, [open]);
 
   const isHome = pathname === "/";
-  const inBooks = pathname.startsWith("/chor");
+  const inBooks = BOOKS.some((b) => pathname.startsWith(b.basePath));
 
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/" className={styles.brand}>
+        <Link
+          href="/"
+          className={styles.brand}
+        >
           {SITE_TITLE}
         </Link>
         <span className={styles.sep}>/</span>
@@ -55,7 +61,10 @@ export default function NavBar() {
         </Link>
         <span className={styles.dot}>·</span>
 
-        <div className={styles.booksWrap} ref={booksRef}>
+        <div
+          className={styles.booksWrap}
+          ref={booksRef}
+        >
           <button
             type="button"
             className={inBooks ? styles.active : styles.item}
@@ -63,23 +72,38 @@ export default function NavBar() {
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
-            Books
+            Livros
           </button>
           {open && (
             <ul className={styles.dropdown}>
-              <li>
-                <Link href="/chor/prefacio" onClick={() => setOpen(false)}>
-                  Prefácio
-                </Link>
-              </li>
-              {CHAPTERS.map((c) => (
-                <li key={c.slug}>
-                  <Link
-                    href={`/chor/${c.slug}`}
-                    onClick={() => setOpen(false)}
-                  >
-                    {c.num}. {c.title}
-                  </Link>
+              {BOOKS.map((book) => (
+                <li
+                  key={book.slug}
+                  className={styles.bookGroup}
+                >
+                  <span className={styles.bookTitle}>{book.title}</span>
+                  <ul className={styles.bookChapters}>
+                    {book.coverPath && (
+                      <li>
+                        <Link
+                          href={book.coverPath}
+                          onClick={() => setOpen(false)}
+                        >
+                          Cover
+                        </Link>
+                      </li>
+                    )}
+                    {book.chapters.map((c) => (
+                      <li key={c.slug}>
+                        <Link
+                          href={`${book.basePath}/${c.slug}`}
+                          onClick={() => setOpen(false)}
+                        >
+                          {c.num}. {c.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </li>
               ))}
             </ul>
@@ -87,14 +111,26 @@ export default function NavBar() {
         </div>
         <span className={styles.dot}>·</span>
 
-        <a
-          href={APOIE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.item}
-        >
-          Apoie
-        </a>
+        {APOIE_ENABLED ? (
+          <a
+            href={APOIE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.item}
+          >
+            Apoie
+          </a>
+        ) : (
+          <span
+            className={styles.disabled}
+            aria-disabled="true"
+            title="Em breve"
+          >
+            Apoie
+          </span>
+        )}
+
+        <EffectsToggle />
       </nav>
     </header>
   );
