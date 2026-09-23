@@ -6,17 +6,17 @@ Um ponto de escuridão no fim do túnel interrompeu sua caminhada cambaleante e 
 
 Ele corria por toda casa, alegre. Uma casa cheia de objetos é bem mais empolgante do que um gramado molhado. E sua nova cama de travesseiros era mais confortável. Deu-lhe leite ao cair da noite, o negro nas janelas aumentou algo dentro dele. Precisava dormir, foi um dia cheio. Pensava, aquele gato não estava ali por acaso. Nada estava. Quando estava aconchegado e com os olhos semiabertos, sentiu algo deslizar pelas suas pernas, o gato havia perseguido ele e provavelmente ficou lutando pra subir até ali. O deslize terminou nas suas mãos, o pequeno gato grudou no seu dedo indicador e mordeu-o carinhosamente, os bracinhos fechados em um abraço. Ele pensa que eu sou a mamãe dele, sorriu até que os sonhos roubaram-lhe a realidade.
 
-Chuva. 
+Chuva.
 
-Gotas. 
+Gotas.
 
-Grama misturada ao barro, o marrom. 
+Grama misturada ao barro, o marrom.
 
-Ele acertou uma bola de lama em seu rosto sorridente, pálido e gelado, ela acertou-lhe de volta, mas ele não sorria. Se grudaram em uma briga boba, se abraçando em meio a chuva, o gargalhar dela misturava-se ao chiar do vento, folhas, vez ou outra, a lhe acertar o cabelo negro que voava descontroladamente de um lado ao outro. Rolaram para o chão, a gargalhada aumentou, era mais alto que o vento. O calor do seu corpo o aquecia em meio ao barro gelado, logo capotaram, desengonçados, grama abaixo. Sem vontade de o fazer, estavam com os lábios misturados entre si, em sintonia, sentia o gosto da grama e barro em meio a saliva, a língua dela estava molhada e tinha gosto de morango, afinal havia comido alguns no piquenique. A vontade não existia, era o destino. Ficaram nessa posição por minutos, mas a chuva parou. Ela estava estupefata e corada, saiu de cima dele envergonhada, deitando-se ao seu lado, sem dizer uma palavra sequer. Ela se curvou um pouco e puxou seu dedo indicador da mão direita, levou-o até seus lábios e mordeu-o carinhosamente. E continuou mordendo e mordendo. Dor e prazer. Sua mordida ficava cada vez mais forte. Iria arrancar metade de seu dedo com os dentes, expondo sua carne, vermelho-escuro escorria em descontrole até o gramado. Pintando-o de vermelho. Muito vermelho, não mais tão escuro já que brilhava com os feixes de sol pós-chuva. Era romântico. 
+Ele acertou uma bola de lama em seu rosto sorridente, pálido e gelado, ela acertou-lhe de volta, mas ele não sorria. Se grudaram em uma briga boba, se abraçando em meio a chuva, o gargalhar dela misturava-se ao chiar do vento, folhas, vez ou outra, a lhe acertar o cabelo negro que voava descontroladamente de um lado ao outro. Rolaram para o chão, a gargalhada aumentou, era mais alto que o vento. O calor do seu corpo o aquecia em meio ao barro gelado, logo capotaram, desengonçados, grama abaixo. Sem vontade de o fazer, estavam com os lábios misturados entre si, em sintonia, sentia o gosto da grama e barro em meio a saliva, a língua dela estava molhada e tinha gosto de morango, afinal havia comido alguns no piquenique. A vontade não existia, era o destino. Ficaram nessa posição por minutos, mas a chuva parou. Ela estava estupefata e corada, saiu de cima dele envergonhada, deitando-se ao seu lado, sem dizer uma palavra sequer. Ela se curvou um pouco e puxou seu dedo indicador da mão direita, levou-o até seus lábios e mordeu-o carinhosamente. E continuou mordendo e mordendo. Dor e prazer. Sua mordida ficava cada vez mais forte. Iria arrancar metade de seu dedo com os dentes, expondo sua carne, vermelho-escuro escorria em descontrole até o gramado. Pintando-o de vermelho. Muito vermelho, não mais tão escuro já que brilhava com os feixes de sol pós-chuva. Era romântico.
 
-Abriu a boca, mas nada saiu. 
+Abriu a boca, mas nada saiu.
 
-Som algum. 
+Som algum.
 
 Mas, acordou aos gritos, o gato mordera-o mais forte do que deveria, fazendo-o acordar, um fio de sangue escorria timidamente na ponta de seu indicador. O gato ficou assustado com o acordar abrupto de seu hospedeiro, mas com um simples carinho, reabriu seu sorriso habitual, agora levemente vermelho e seus olhinhos cerraram até sumir, esqueceu de voltar a morder. Sentiu que amava aquela criatura muito, demasiado, em excesso, muitíssimo. Todos seus sentimentos por ela se reuniram em uma bola e pousaram em sua consciência na forma daquela criatura dorminhoca fofinha. O meio de sua consciência, sabia era somente luz, tão clara que queimava quem tentasse entrar em contato, mas era ali mesmo que tudo estava. Esse amor estava cavando um buraco profundo até esse universo de luz, estava tão fundo que seria difícil tirá-lo de lá agora, essa bola negra agora não era mais tão escura, se fundira a luz. Mas não se tornara luz, tampouco escuridão. Era a intersecção indefinida entre, incompreensível. Era tão intenso que poderia pegar uma faca bem afiada, colocar no topo de seu busto, abri-lo, jorrar espalhafatosamente suas entranhas sobre a criatura, uma cachoeira de sangue molhado. O vermelho é a cor que melhor representa o amor, seu dedo em vermelho não era obra do acaso.
 
@@ -42,7 +42,7 @@ Quando o pequeno gato acordou assustado, todos se viraram de abrupto para ele.
 
 Todos sorriam abertamente, menos ele. Os raios atravessavam por eles.
 
-O gato negro atraia a luz, ou, estava sendo sugado pela luz. 
+O gato negro atraia a luz, ou, estava sendo sugado pela luz.
 
 Chiava de dor aguda.
 

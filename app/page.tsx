@@ -24,13 +24,14 @@ export default function Home() {
       </header>
 
       <section className={styles.grid} aria-label="Capítulos">
-        {book.chapters.map((chapter) => (
-          <ChapterCard key={chapter.slug} chapter={chapter} />
-        ))}
-        {/* Caixas provisórias: título e conceito a definir. */}
-        {PLACEHOLDERS.map((p) => (
-          <PlaceholderCard key={p.id} kanji={p.kanji} />
-        ))}
+        {/* Capítulos e caixas provisórias (título e conceito a definir),
+            intercalados pela posição. */}
+        {[
+          ...book.chapters.map((chapter) => ({ num: chapter.num, node: <ChapterCard key={chapter.slug} chapter={chapter} /> })),
+          ...PLACEHOLDERS.map((p) => ({ num: p.num, node: <PlaceholderCard key={p.id} kanji={p.kanji} /> })),
+        ]
+          .sort((a, b) => a.num - b.num)
+          .map((item) => item.node)}
       </section>
     </div>
   );

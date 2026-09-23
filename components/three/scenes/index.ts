@@ -18,6 +18,8 @@ import * as Triangulo from "./Triangulo";
 import * as Construcao from "./Construcao";
 import * as Denso from "./Denso";
 import * as Borboletas from "./Borboletas";
+import * as Cidade from "./Cidade";
+import * as Predio from "./Predio";
 
 export const SCENES: Record<SceneId, Scene> = {
   agua: Agua,
@@ -28,4 +30,6 @@ export const SCENES: Record<SceneId, Scene> = {
   construcao: Construcao,
   denso: Denso,
   borboletas: Borboletas,
+  cidade: Cidade,
+  predio: Predio,
 };

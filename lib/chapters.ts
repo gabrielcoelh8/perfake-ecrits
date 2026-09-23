@@ -17,7 +17,9 @@ export type SceneId =
   | "triangulo"
   | "construcao"
   | "denso"
-  | "borboletas";
+  | "borboletas"
+  | "cidade"
+  | "predio";
 
 export type Chapter = {
   slug: string;
@@ -36,7 +38,7 @@ export type Chapter = {
 export const CHAPTERS: Chapter[] = [
   { slug: "agua", num: 1, kanji: "一", title: "Água", file: "agua.md", sceneId: "agua", hasBackground: true, accent: "#4aa3c7" },
   // "Perfeito" está temporariamente fora do ar. Para restaurá-lo: descomente a
-  // linha abaixo e renumere `num`/`kanji` dos capítulos seguintes (二〜八).
+  // linha abaixo e renumere `num`/`kanji` dos capítulos seguintes (二〜九).
   // Nada foi apagado — a cena (three/scenes/Perfeito.tsx) e o conteúdo
   // (content/chor/perfeito.md) continuam no repositório.
   // { slug: "perfeito", num: 2, kanji: "二", title: "Perfeito", file: "perfeito.md", sceneId: "perfeito", hasBackground: true, accent: "#8f8fa8" },
@@ -46,18 +48,20 @@ export const CHAPTERS: Chapter[] = [
   { slug: "construcao", num: 5, kanji: "五", title: "Construção", file: "construcao.md", sceneId: "construcao", hasBackground: true, accent: "#b8934a" },
   { slug: "denso", num: 6, kanji: "六", title: "Denso", file: "denso.md", sceneId: "denso", hasBackground: true, accent: "#5f7a55" },
   { slug: "borboletas", num: 7, kanji: "七", title: "Borboletas", file: "borboletas.md", sceneId: "borboletas", hasBackground: false, accent: "#3f7a63" },
+  { slug: "cidade", num: 8, kanji: "八", title: "Cidade", file: "cidade.md", sceneId: "cidade", hasBackground: true, accent: "#a8323c" },
+  { slug: "predio", num: 9, kanji: "九", title: "Prédio", file: "predio.md", sceneId: "predio", hasBackground: true, accent: "#6f8aa3" },
 ];
 
 /**
  * Caixas provisórias exibidas no fim da grade da home: capítulos que ainda vão
  * ser escritos. Mostram só o numeral kanji da posição futura e um esqueleto no
  * lugar do título, ainda a definir — por isso aparecem apagadas e não são
- * clicáveis. Ao promover uma a capítulo real, mova-a para CHAPTERS.
+ * clicáveis. `num` é a posição na grade: a caixa é intercalada entre os
+ * capítulos reais pela ordem numérica. Ao promover uma a capítulo real, mova-a
+ * para CHAPTERS.
  */
 export const PLACEHOLDERS = [
-  { id: "tbd-1", kanji: "八" },
-  { id: "tbd-2", kanji: "九" },
-  { id: "tbd-3", kanji: "十" },
+  { id: "tbd-1", num: 10, kanji: "十" },
 ];
 
 export const CHAPTERS_BY_SLUG: Record<string, Chapter> = Object.fromEntries(
