@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scenes": "node scripts/render-scenes.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^9.6.1",
     "gray-matter": "^4.0.3",
-    "next": "16.2.10",
+    "next": "16.3.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "remark": "^15.0.1",
@@ -26,6 +27,7 @@
     "@types/three": "^0.185.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "playwright": "1.62.0",
     "typescript": "^5"
   }
 }
