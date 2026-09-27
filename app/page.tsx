@@ -33,6 +33,8 @@ export default function Home() {
           .sort((a, b) => a.num - b.num)
           .map((item) => item.node)}
       </section>
+
+      <footer className={styles.footer}>Gabriel R. A. Coelho, 2026</footer>
     </div>
   );
 }

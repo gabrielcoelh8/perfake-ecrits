@@ -1,7 +1,21 @@
 .wrap {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 2rem 2.5rem 5rem;
+  padding: 2rem 2.5rem 1.5rem;
+  /* Fill the viewport so the footer sits at the very bottom even when the
+     grid is short. */
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
 }
 
 .intro {
@@ -40,7 +54,7 @@
 
 @media (max-width: 640px) {
   .wrap {
-    padding: 1.5rem 1.25rem 4rem;
+    padding: 1.5rem 1.25rem 1.25rem;
   }
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

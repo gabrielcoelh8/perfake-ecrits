@@ -1,4 +1,4 @@
-# Borboletas
+# Cisnei
 "*Uma taça de prata com enfeites circulares em forma de pequenos sóis, a luz amarelada das velas e lâmpadas do restaurante refletia neles, ora, então parecia ser deles. Vinho tinto, quase negro, preenchia-a até quase sua metade, a escuridão rodeada pela luz. A taça levantou, tapou parcialmente seu rosto sorridente por breve e novamente desceu de seus lábios de batons escuros como o vinho. Ela me mirou diretamente nos olhos. Lembro de sentir como se algo me puxasse para trás bem fraco, mas não fraco o suficiente para não ser perceptível. Seus olhos adquiriram os tons das águas azuis pôs-tempestade, sua íris tinha uma maré, ondas violentas e brilhantes. As vozes em volta se abafaram. Com sua mão esquerda levantou a taça novamente, com sua outra começou a cortar uma fatia fina do bife frio sobre o prato, com pouco tempero. Ao mesmo tempo, com outra mão alcançou a pimenta e, com outra mão, segurou minha mão direita carinhosamente.*
 
 *— Qual o sentido de comer carne animal? Não torna isso menos cruel e sequer é mais gostosa — disseram várias vozes ao mesmo tempo vindo da mesma direção, dela.*

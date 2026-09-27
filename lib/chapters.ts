@@ -19,7 +19,8 @@ export type SceneId =
   | "denso"
   | "borboletas"
   | "cidade"
-  | "predio";
+  | "predio"
+  | "quarto";
 
 export type Chapter = {
   slug: string;
@@ -47,9 +48,10 @@ export const CHAPTERS: Chapter[] = [
   { slug: "triangulo", num: 4, kanji: "四", title: "Triângulo", file: "triangulo.md", sceneId: "triangulo", hasBackground: true, accent: "#d8b13a" },
   { slug: "construcao", num: 5, kanji: "五", title: "Construção", file: "construcao.md", sceneId: "construcao", hasBackground: true, accent: "#b8934a" },
   { slug: "denso", num: 6, kanji: "六", title: "Denso", file: "denso.md", sceneId: "denso", hasBackground: true, accent: "#5f7a55" },
-  { slug: "borboletas", num: 7, kanji: "七", title: "Borboletas", file: "borboletas.md", sceneId: "borboletas", hasBackground: false, accent: "#3f7a63" },
+  { slug: "borboletas", num: 7, kanji: "七", title: "Cisnei", file: "borboletas.md", sceneId: "borboletas", hasBackground: false, accent: "#3f7a63" },
   { slug: "cidade", num: 8, kanji: "八", title: "Cidade", file: "cidade.md", sceneId: "cidade", hasBackground: true, accent: "#a8323c" },
   { slug: "predio", num: 9, kanji: "九", title: "Prédio", file: "predio.md", sceneId: "predio", hasBackground: true, accent: "#6f8aa3" },
+  { slug: "quarto", num: 10, kanji: "十", title: "Quarto", file: "quarto.md", sceneId: "quarto", hasBackground: true, accent: "#c29a5b" },
 ];
 
 /**
@@ -60,9 +62,7 @@ export const CHAPTERS: Chapter[] = [
  * capítulos reais pela ordem numérica. Ao promover uma a capítulo real, mova-a
  * para CHAPTERS.
  */
-export const PLACEHOLDERS = [
-  { id: "tbd-1", num: 10, kanji: "十" },
-];
+export const PLACEHOLDERS: { id: string; num: number; kanji: string }[] = [];
 
 export const CHAPTERS_BY_SLUG: Record<string, Chapter> = Object.fromEntries(
   CHAPTERS.map((c) => [c.slug, c]),

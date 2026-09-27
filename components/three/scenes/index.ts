@@ -20,6 +20,7 @@ import * as Denso from "./Denso";
 import * as Borboletas from "./Borboletas";
 import * as Cidade from "./Cidade";
 import * as Predio from "./Predio";
+import * as Quarto from "./Quarto";
 
 export const SCENES: Record<SceneId, Scene> = {
   agua: Agua,
@@ -32,4 +33,5 @@ export const SCENES: Record<SceneId, Scene> = {
   borboletas: Borboletas,
   cidade: Cidade,
   predio: Predio,
+  quarto: Quarto,
 };
